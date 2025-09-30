@@ -5,56 +5,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>杨帆的个人主页</title>
     <style>
-        /* 简单美化样式，让页面更易读 */
+        /* 页面样式美化，提升阅读体验 */
         body {
             font-family: "Microsoft YaHei", Arial, sans-serif;
             max-width: 1000px;
             margin: 0 auto;
             padding: 20px;
-            line-height: 1.6;
+            line-height: 1.8;
             color: #333;
-            background-color: #f9f9f9;
+            background-color: #f7f9fc;
         }
         h1, h2, h3 {
-            color: #2c3e50;
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 8px;
-            margin-top: 30px;
+            color: #2d4263;
+            border-bottom: 3px solid #c84b31;
+            padding-bottom: 10px;
+            margin-top: 35px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2.2em;
+        }
+        .intro-photo {
+            max-width: 220px;
+            border-radius: 10px;
+            margin: 20px 0;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.15);
         }
         .info-table {
             width: 100%;
             border-collapse: collapse;
-            margin: 20px 0;
+            margin: 25px 0;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
         }
         .info-table th, .info-table td {
-            border: 1px solid #ddd;
-            padding: 12px;
+            border: none;
+            padding: 15px;
             text-align: left;
         }
         .info-table th {
-            background-color: #3498db;
+            background-color: #2d4263;
             color: white;
+            font-weight: bold;
         }
-        .experience-item, .work-item {
-            margin: 20px 0;
-            padding: 15px;
+        .info-table tr:nth-child(even) {
+            background-color: #f0f5ff;
+        }
+        .experience-item {
+            margin: 25px 0;
+            padding: 20px;
             background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+        .experience-item p:first-child {
+            font-weight: bold;
+            color: #2d4263;
+            font-size: 1.1em;
+        }
+        ul {
+            padding-left: 25px;
+        }
+        ul li {
+            margin: 10px 0;
         }
         a {
-            color: #3498db;
+            color: #c84b31;
             text-decoration: none;
+            font-weight: 500;
         }
         a:hover {
             text-decoration: underline;
         }
         .footer {
-            margin-top: 50px;
+            margin-top: 60px;
             text-align: center;
             color: #666;
-            padding: 20px 0;
+            padding: 25px 0;
             border-top: 1px solid #ddd;
+            font-size: 1.05em;
         }
     </style>
 </head>
@@ -62,8 +93,9 @@
     <h1>个人主页：杨帆</h1>
     <p>Hi，欢迎来到我的个人小站！这里是我梳理成长轨迹、分享兴趣思考的地方，希望能让你更直观地认识我～</p>
 
-    <!-- 一、关于我 -->
-    <h2>一、关于我：一句话的自我介绍</h2>
+    <!-- 关于我板块 -->
+    <h2>一、关于我：自我介绍</h2>
+    <img src="https://p3-flow-imagex-sign.byteimg.com/ocean-cloud-tos/pages_upload_image_2fe34b11-826d-4e60-bb81-4660c6f34173.jpeg~tplv-a9rns2rl98-image-qvalue.image?rcl=20250930205700D91652349DF648A125ED&rk3s=8e244e95&rrcfp=121e9355&x-expires=1790859420&x-signature=Dghnj6y0HY8e8oNo7I8D2ug3b5I%3D" class="intro-photo" alt="杨帆个人照片">
     <p>大家好，我是杨帆，来自山东烟台蓬莱 —— 没错，就是传说中能瞅见 “海市蜃楼” 的地儿！不过咱得说实话，活这么大我就没见过一次，倒是从小被蓬莱小面 “喂” 得嘴刁，现在吃别的面总觉得少点鲜掉眉毛的骨汤味儿。还有鲅鱼水饺，塞满整颗鲅鱼肉，咬一口能爆汁，每次跟人聊这个，都想当场拉着去我家蹭饭！</p>
     <p>我性格属于 “没脾气星人”，平时爱打羽毛球、跑步。打羽毛球主打一个 “快乐至上”，输赢不重要，主要是能跟朋友瞎侃；跑步更简单，揣个手机沿海边跑，累了就蹲那儿看大爷钓鱼，主打一个随性。</p>
     <p>我想跟大家处成 “搭子”—— 不管是约球、跑步，还是聊家乡的海鲜，都能热热闹闹的，希望咱能处得比蓬莱的海鲜还对味！</p>
@@ -84,7 +116,7 @@
         </tr>
         <tr>
             <td>联系方式</td>
-            <td>邮箱：3312427935@qq.com</td>
+            <td>邮箱：3312427935@qq.com / 电话：15098596221</td>
         </tr>
         <tr>
             <td>常用社交平台</td>
@@ -92,53 +124,38 @@
         </tr>
     </table>
 
-    <!-- 二、我的经历 -->
+    <!-- 我的经历板块 -->
     <h2>二、我的经历：一步一步的成长</h2>
     <h3>1. 学业经历</h3>
     <div class="experience-item">
-        <p><strong>XX学校（可替换为你的学校名称） | 某年级某专业（如：2023级计算机专业）</strong> | 2023.09 - 至今</p>
+        <p>山东财经大学 | 大一，会计专业 | 2025.08 - 至今</p>
         <ul>
-            <li>核心学习内容1：参与“校园文化宣传”课程项目，负责视频素材拍摄与后期剪辑，完成3条校园活动宣传视频（含你B站作品相关内容）；</li>
-            <li>核心学习内容2：协助老师整理课程资料与学术文档，规范文件分类逻辑，提升资料查找效率；</li>
-            <li>核心成果：课程项目视频获校级“校园优秀宣传作品”提名（可根据实际情况修改或补充）。</li>
+            <li>核心学习内容 1：认真学习专业基础课程，如基础会计、微积分，课后主动整理笔记，及时巩固知识点，确保对专业概念的理解扎实到位。</li>
+            <li>核心学习内容 2：积极参与校园活动，如班级组织的主题班会、学院的新生辩论赛等，在活动中锻炼沟通表达能力，快速融入校园集体，拓展人际交往圈。</li>
         </ul>
     </div>
+
     <div class="experience-item">
-        <p><strong>XX高中（可替换为你的高中名称） | 高中生</strong> | 2020.09 - 2023.06</p>
+        <p>山东省烟台二中 | 高中生 | 2022.09 - 2025.06</p>
         <ul>
-            <li>核心学习内容1：担任班级宣传委员，负责班会PPT制作与活动文案编写，多次获得“优秀宣传个人”；</li>
-            <li>核心学习内容2：参与学校运动会组织工作，协调运动员签到与赛事记录，保障活动顺利进行。</li>
+            <li>核心学习内容 1：系统学习高中各学科知识，制定科学的学习计划，合理分配时间攻克薄弱科目，尤其在优势学科（语文）上表现突出，多次获得学校单科成绩前列。</li>
+            <li>核心学习内容 2：参与学校电声乐社，担任社团部副部长，组织参与校园征文比赛、学校樱花艺术节等活动，丰富课余生活的同时，提升组织协调与团队协作能力。</li>
         </ul>
     </div>
 
     <h3>2. 技能栈：我能做什么</h3>
-    <div class="work-item">
+    <div class="experience-item">
+        <p>核心技能（熟练）：</p>
         <ul>
-            <li><strong>视频剪辑</strong>：熟练使用剪映、Pr（Premiere），能完成素材剪辑、转场特效、字幕添加、背景音乐搭配，可独立产出宣传类、记录类视频（如B站发布的城市发展主题视频）；</li>
-            <li><strong>文档整理</strong>：擅长用Word、Excel、Notion进行资料分类、格式统一、数据统计，能快速梳理杂乱信息并形成结构化文档；</li>
-            <li><strong>文本编写</strong>：可撰写校园活动文案、课程作业报告、简单宣传推文，语言风格贴近受众，逻辑清晰易读。</li>
+            <li>视频剪辑：熟练使用剪映、Pr（Premiere）等剪辑软件，能够完成视频素材筛选、剪辑拼接、添加字幕、背景音乐搭配等全流程操作，可独立制作日常vlog、课程作业视频等，曾完成校园活动记录视频等作品。</li>
+            <li>文档整理：擅长使用Word、Excel等办公软件，能对各类资料进行分类归纳、格式统一、内容梳理，高效完成学习笔记整理、班级资料汇总等工作，提升信息管理效率。</li>
         </ul>
     </div>
 
-    <!-- 三、我的作品 -->
-    <h2>三、我的作品：看得见的成果</h2>
-    <h3>1. 学业/兴趣作品</h3>
-    <div class="work-item">
-        <p><strong>作品名称1：《理论青春·星火燎原｜淄博——城市发展的核心命题》</strong></p>
-        <p>作品简介：围绕淄博城市发展主题，结合理论分析与实际案例，通过视频形式呈现城市发展核心逻辑，画面流畅、内容有深度；</p>
-        <p>查看链接：<a href="https://b23.tv/NmDZovy" target="_blank">https://b23.tv/NmDZovy</a>（B站直接点击可观看）</p>
-    </div>
-
-    <!-- 四、联系我 -->
-    <h2>四、联系我：期待交流</h2>
-    <p>如果你对我的作品感兴趣，或想聊兴趣爱好、学业规划、家乡美食，欢迎通过以下方式找我～</p>
-    <ul>
-        <li>邮箱：3312427935@qq.com</li>
-        <li>电话：15098596221</li>
-    </ul>
-    <p>备注：如果是合作（如视频剪辑、文档协助）或交流需求，邮件标题建议注明“[事由] + 你的名字”，我会在1-3个工作日内回复～</p>
-
+    <!-- 联系与结尾 -->
     <div class="footer">
-        <p>最后，感谢你的停留！希望我们能在这里产生有趣的连接 ✨</p>
+        <p>如果你对我的个人经历、技能感兴趣，或想约球、聊家乡海鲜、交流学习心得，欢迎通过邮箱或电话联系我～</p>
+        <p>感谢你的停留！希望我们能在这里产生有趣的连接 ✨</p>
     </div>
 </body>
+</html>
